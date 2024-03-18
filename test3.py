@@ -51,7 +51,7 @@ def process_image(image_path):
                 print("roi_char",os.path.splitext(os.path.basename(image_path))[0][idx])
                 roi_output_path = os.path.join(output_folder_numeric, roi_filename)
 
-            cv.imshow("roi", roi)
+            #cv.imshow("roi", roi)
             cv.waitKey(0)
             cv.imwrite(roi_output_path, roi)
 
@@ -62,7 +62,7 @@ def process_image(image_path):
     cv.waitKey(0)
 
 # Path to the directory containing PNG images
-folder_path = "./images_from_excel"
+folder_path = "./csv_to_images"
 
 # Process each PNG file in the directory
 for filename in os.listdir(folder_path):
