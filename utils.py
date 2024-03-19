@@ -1,3 +1,7 @@
+######## 3D 비전 카메라에서 최초로 저장한 csv 파일로부터 바로 이미지를 추출 에러가 뜬다. 고로 아래 과정을 통하여 csv 파일을 다듬어 주어야 한다 ####
+# https://pylife.tistory.com/entry/PythonPandas-ParserError-Error-tokenizing-data -> 에러 해결에 참조한 사이트
+
+
 import os
 import csv
 import pandas as pd
