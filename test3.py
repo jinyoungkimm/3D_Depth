@@ -61,11 +61,8 @@ def process_image(image_path):
 folder_path = "./csv_to_images"
 
 # Process each PNG file in the directory
-count = 0
 for filename in os.listdir(folder_path):
     if filename.endswith(".png"):
-        count += 1
-        print("count",count)
         print("filename",filename)
         image_path = os.path.join(folder_path, filename)
         process_image(image_path)
